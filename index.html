@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style>
+			html,
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.mayu-date-container {
+				overflow: hidden;
+			}
+			
+			.mayu-date-header {
+				color: #fff;
+				background-color: rgb(230, 23, 62);
+			}
+			
+			.mayu-date-header-title {
+				color: #fff;
+				font-size: 18px;
+				background-color: #d22f26;
+				text-align: center;
+				line-height: 7vh;
+				height: 7vh;
+			}
+			
+			.mayu-date-header-message {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 20vh;
+			}
+			
+			.mayu-date-header-message-date {
+				font-size: 80px;
+				font-weight: 100;
+				font-family: "microsoft yahei";
+			}
+			
+			.mayu-date-header-message-right {
+				margin-left: 10px;
+			}
+			
+			.mayu-date-header-message-month {
+				font-size: 30px;
+				font-weight: 100;
+			}
+			
+			.mayu-date-header-message-year {
+				font-size: 24px;
+				font-weight: 100;
+			}
+			
+			.mayu-date-header-controller {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 20px;
+				font-size: 20px;
+				height: 5vh;
+			}
+			
+			.mayu-date-prev_month,
+			.mayu-date-next_month {
+				width: 30px;
+				height: 30px;
+			}
+			
+			.mayu-date-prev_month img,
+			.mayu-date-next_month img {
+				width: inherit;
+				height: inherit;
+			}
+			
+			.mayu-date-prev_month img {
+				transform: scaleX(-1);
+			}
+			
+			.mayu-date-body {
+				padding: 0 1vw;
+			}
+			
+			.mayu-date-body-week:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.mayu-date-week-item {
+				height: 6vh;
+				line-height: 6vh;
+				color: #424243;
+				display: block;
+				float: left;
+				width: 14vw;
+				font-size: 20px;
+				text-align: center;
+			}
+			
+			.mayu-date-main {
+				height: 62vh;
+			}
+			
+			.mayu-date-main div {
+				height: 6vh;
+				line-height: 6vh;
+				color: #424243;
+				display: block;
+				float: left;
+				width: 14vw;
+				font-size: 20px;
+				text-align: center;
+			}
+			.mayu-date-main div.active{
+				color: #fff;
+				background-color: rgb(230, 23, 62);
+				border-radius:3vh ;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mayuyu">
+			<div class="mayu-date-container">
+				<div class="mayu-date-header">
+					<div class="mayu-date-header-title">
+						路过的日历
+					</div>
+					<div class="mayu-date-header-message">
+						<div>
+							<div class="mayu-date-header-message-date">12</div>
+						</div>
+						<div class="mayu-date-header-message-right">
+							<div class="mayu-date-header-message-month">一月</div>
+							<div class="mayu-date-header-message-year">2018</div>
+						</div>
+					</div>
+					<div class="mayu-date-header-controller">
+						<div class="mayu-date-prev_month">
+							<img src="img/next.png">
+						</div>
+						<div>
+							<span class="mayu-date-year">2018</span>
+							年
+							<span class="mayu-date-month">2018</span>
+							月
+							<span class="mayu-date-date">8</span>
+							日</div>
+						<div class="mayu-date-next_month">
+							<img src="img/next.png">
+						</div>
+					</div>
+				</div>
+				<div class="mayu-date-body">
+					<div class="mayu-date-body-week">
+						<div class="mayu-date-week-item">日</div>
+						<div class="mayu-date-week-item">一</div>
+						<div class="mayu-date-week-item">二</div>
+						<div class="mayu-date-week-item">三</div>
+						<div class="mayu-date-week-item">四</div>
+						<div class="mayu-date-week-item">五</div>
+						<div class="mayu-date-week-item">六</div>
+					</div>
+					<div class="mayu-date-main">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mayuDate.js">
+	</script>
+
+</html>
